@@ -17,7 +17,7 @@ public class Question1 {
          driver.get("");
     }
     @Test
-    public void verifyTitleOfThePage(){
+    public void verifyTitleOfThePage(yes){
 
 
     }
