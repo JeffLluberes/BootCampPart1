@@ -50,7 +50,7 @@ public class Question2 {
 }
 class Main{
     public static void main(String[] args) {
-        
+
         Question2 hard = new Question2();
 
         hard.addNode(10);

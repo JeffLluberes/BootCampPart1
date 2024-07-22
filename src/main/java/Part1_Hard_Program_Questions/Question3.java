@@ -2,7 +2,7 @@ package Part1_Hard_Program_Questions;
 
 import java.util.Arrays;
 
-public class Question4 {
+public class Question3 {
 
     static int partition(int array[], int low, int high) {
 
@@ -51,7 +51,7 @@ class main{
 
         int size = data.length;
 
-        Question4.quickSort(data, 0, size - 1);
+        Question3.quickSort(data, 0, size - 1);
 
         System.out.println("Sorted Array in Ascending Order ");
         System.out.println(Arrays.toString(data));
