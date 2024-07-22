@@ -16,6 +16,16 @@ public class Homepage {
     @FindBy(linkText = "Login")
     private WebElement loginLink;
 
+    @FindBy(name = "search")
+    private WebElement searchBox;
+
+    @FindBy(xpath = "//button[@type = 'button']")
+    private WebElement searchButton;
+
+    @FindBy(xpath = "//button[@type = 'button']/i/following::span[@class = 'hidden-xs hidden-sm hidden-md']")
+    private WebElement addToCartButton;
+
+
     public Homepage(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver,this);
@@ -23,5 +33,9 @@ public class Homepage {
 
     public void clickMyAccountDropDown(){myAccountDropDown.click();}
     public void clickloginLink(){loginLink.click();}
+    public void enterToSearchBoxTextField(String product){searchBox.sendKeys(product);}
+    public void clickOnSearchButton(){searchButton.click();}
+    public void clickOnAddToCart(){addToCartButton.click();}
+
 
 }
