@@ -1,4 +1,4 @@
-package Part2_TestNG_Hard_Questions_TestCases;
+package Part1_TestNG_Hard_Questions_TestCases;
 
 import Pages.AccountPage;
 import Pages.Homepage;

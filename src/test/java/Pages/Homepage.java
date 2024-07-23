@@ -16,14 +16,17 @@ public class Homepage {
     @FindBy(linkText = "Login")
     private WebElement loginLink;
 
-    @FindBy(name = "search")
-    private WebElement searchBox;
+    @FindBy(linkText = "Register")
+    private WebElement registerLink;
 
-    @FindBy(xpath = "//button[@type = 'button']")
-    private WebElement searchButton;
+    @FindBy(linkText = "Desktops")
+    private WebElement homePageElement;
 
-    @FindBy(xpath = "//button[@type = 'button']/i/following::span[@class = 'hidden-xs hidden-sm hidden-md']")
-    private WebElement addToCartButton;
+    @FindBy(linkText = "Laptops & Notebooks")
+    private WebElement linkOnHomePage;
+
+
+
 
 
     public Homepage(WebDriver driver){
@@ -33,9 +36,13 @@ public class Homepage {
 
     public void clickMyAccountDropDown(){myAccountDropDown.click();}
     public void clickloginLink(){loginLink.click();}
-    public void enterToSearchBoxTextField(String product){searchBox.sendKeys(product);}
-    public void clickOnSearchButton(){searchButton.click();}
-    public void clickOnAddToCart(){addToCartButton.click();}
+    public void clickOnRegisterLink(){registerLink.click();}
+    public void clickOnLinkOnHomepage(){linkOnHomePage.click();}
+    public boolean elementPresentOnHomePage(){
+        boolean display = homePageElement.isDisplayed();
+        return display;
+
+    }
 
 
 }
